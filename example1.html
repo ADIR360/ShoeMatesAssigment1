@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLE Mates</title>
+  <link rel="icon" type="image/jpg" href="shoe.jpg">
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: no-repeat center center fixed;
+        background-size: cover;
+        background-color: #ffffff; 
+        color: #000;
+        text-align: center;
+    }
+    .image-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        justify-content: center;
+    }
+    .image-section img {
+        width: 100%; 
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    header, footer {
+        width: 100%;
+        background-color: rgba(9, 9, 9, 0.21);
+        padding: 5px 20px;
+        box-sizing: border-box;
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+    header a {
+        color: #000;
+        text-decoration: none;
+    }
+    header a:hover {
+        color: #333;
+    }
+    header, footer {
+        position: fixed;
+        z-index: 999;
+    }
+    footer {
+        bottom: 0;
+        height: 50px;
+        padding: 0 20px;
+        background-color: rgba(5, 5, 5, 0.38);
+    }
+    .footer-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-links li {
+        margin: 0 10px;
+    }
+    .footer-links li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .social-media a {
+        margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="#">Sole Mates</a></h1>
+    <section class="products">
+      <h2 style="color: #fff;">Featured Sneakers</h2>
+    </section>
+  </header>
+  
+  <ul class="image-section">
+    <li>
+      <a href="#"><img src="https://imagedelivery.net/2DfovxNet9Syc-4xYpcsGg/f7df86b5-9f10-4533-a3b2-bc824435f900/product" alt="Shoe 1" onclick="window.location.href='product1.html'"><p>Air Jordan 1's</p></a>
+    </li>
+    <li>
+      <a href="#"><img src="https://atmos.co.id/cdn/shop/products/2E2B95EA-0370-471C-9D9C-9433B718B532_1_1360x.jpg?v=1592917568" alt="Shoe 2" onclick="window.location.href='product2.html'"><p> Yeezy SPLY 350 </p></a>
+    </li>
+    <li>
+      <a href="#"><img src="https://d2cva83hdk3bwc.cloudfront.net/new-balance-9060-sea-salt-blue-1.jpg" alt="Shoe 3" onclick="window.location.href='product3.html'"><p>New Balance 9060</p></a>
+    </li>
+    <li>
+      <a href="#"><img src="https://www.outbacksylt.com/files/image/id/29692/fixed/1/w/1000/h/1000/n/adidas-samba-og-white-b75806-1.jpg" alt="Shoe 4" onclick="window.location.href='product4.html'"><p>Adidas Sambas </p></a>
+    </li>
+  </ul>
+
+  <footer style="height: 100px;">
+    <div class="footer-links" style="float: left;">
+        <ul style="display: flex;">
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="returns.html">Return Policy</a></li>
+        </ul>
+    </div>
+    <div class="social-media" style="float: left; margin-left: 20px;">
+        <a href="https://www.linkedin.com/in/arush-dubey-358840244/"><img src="" alt="linkedin"></a>
+        <a href="https://www.instagram.com/arushdubey360/"><img src="" alt="Instagram"></a>    
+    </div>
+    <div class="copyright" style="float: right; margin-right: 20px;">
+        <p>&copy; 2024 Sole Mates. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

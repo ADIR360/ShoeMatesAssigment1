@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLE Mates</title>
+    <link rel="icon" type="image/jpg" href="shoe.jpg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #000;
+            text-align: center;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2; /* added background color for better visibility */
+        }
+        .wrapper {
+            background-color: transparent; /* Make the background transparent */
+        }
+        form {
+            background: rgba(244, 242, 242, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2; /* Ensure the form appears above the video */
+        }
+        .input-box {
+            margin-bottom: 15px;
+        }
+        .input-box input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .button {
+            background-color: #0daaaf;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form onsubmit="checkCredentials(event)">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="button">Login</button>
+            <button type="button" class="button" onclick="window.location.href = 'Sneakers.html';">Redirect</button>
+        </form>
+    </div>
+    <script>
+        function checkCredentials(event) {
+            event.preventDefault();
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === "arush" && password === "arush123") {
+                redirectToDashboard();
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+
+        function redirectToDashboard() {
+            window.location.href = "Sneakers.html";
+        }
+    </script>
+</body>
+</html>

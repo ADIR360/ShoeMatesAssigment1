@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        img {
+            max-width: 200px; 
+            height: auto;
+        }
+        .button {
+            background-color: #0daaaf;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .count {
+            font-size: 20px;
+            font-family: 'Open Sans';
+            font-weight: 900;
+            color: #202020;
+        }
+    </style>
+</head>
+<body>
+    <ul>           
+         <li><a href="Sneakers.html">HomePage</a></li>
+        </ul>
+    <h1>Shopping Cart</h1>
+    <div id="cart-items">
+        <div>
+            <img src="" alt="Product Image" id="product-image">
+            <h2 id="product-name"></h2>
+            <p id="product-price"></p>
+            <div class="count" id="product-quantity">Quantity: 1</div>
+            <button class="button" onclick="decreaseQuantity()">-</button>
+            <button class="button" onclick="increaseQuantity()">+</button><br>
+            <!-- Removed Add to Cart and Add to Wishlist buttons -->
+        </div>
+    </div>
+    <!-- Removed View Cart button -->
+    <div id="cart-display" style="display: none;">
+        <h2>Cart</h2>
+        <div id="cart-items-display"></div>
+        <button class="button" onclick="clearCart()">Clear Cart</button>
+    </div>
+    <script>
+        function loadProduct(name, image, price) {
+            localStorage.setItem('productName', name);
+            localStorage.setItem('productImage', image);
+            localStorage.setItem('productPrice', price);
+
+            document.getElementById('product-name').innerText = name;
+            document.getElementById('product-image').src = image;
+            document.getElementById('product-price').innerText = price;
+        }
+
+        function increaseQuantity() {
+            var quantity = parseInt(document.getElementById('product-quantity').innerText.split(':')[1].trim()) + 1;
+            document.getElementById('product-quantity').innerText = 'Quantity: ' + quantity;
+        }
+
+        function decreaseQuantity() {
+            var quantity = parseInt(document.getElementById('product-quantity').innerText.split(':')[1].trim());
+            if (quantity > 1) {
+                quantity--;
+                document.getElementById('product-quantity').innerText = 'Quantity: ' + quantity;
+            }
+        }
+
+        // Removed addToCart function
+
+        function addToWishlist() {
+            alert('Product added to wishlist!');
+        }
+
+        // Removed displayCart function
+
+        function clearCart() {
+            // Implement clearing cart items here
+        }
+
+        // Load product details from the second code
+        loadProduct('Air Hordan 1 Chiago Sneakers', 'https://imagedelivery.net/2DfovxNet9Syc-4xYpcsGg/f7df86b5-9f10-4533-a3b2-bc824435f900/product', '4399 MRP to 7999 (45% OFF)');
+    </script>
+</body>
+</html>

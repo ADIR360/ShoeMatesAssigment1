@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLE Mates</title>
+    <link rel="icon" type="image/jpg" href="shoe.jpg">
+    <style>
+        body {
+            margin: 0;
+            padding-top: 50px;
+            font-family: Arial, sans-serif;
+            background: no-repeat center center fixed;
+            background-size: cover;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        nav ul,
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li,
+        footer ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a,
+        footer ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        nav {
+            bottom: 60px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-sizing: border-box;
+            z-index: 999;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            margin-top: 150px; 
+        }
+
+        .primary-image{
+            position: relative;
+            margin-bottom: 20px;
+            max-width: 600px; 
+            overflow: hidden; 
+        }
+
+        .secondary-image {
+            position: relative;
+            margin-bottom: 20px;
+            max-width: 200px; 
+            overflow: hidden; 
+        }
+
+        .primary-image img,
+        .secondary-image img {
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s; 
+        }
+
+        .primary-image:hover img,
+        .secondary-image:hover img {
+            transform: scale(1.1); 
+        }
+
+        .image-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .product-desc {
+            text-align: left; 
+            max-width: 600px; 
+            margin: 0 auto; 
+        }
+
+        .product-desc h2 {
+            margin-top: 0; 
+        }
+
+        .product-desc .rating,
+        .product-desc .price {
+            display: block; 
+            margin-bottom: 10px; 
+        }
+
+        .size-selector,
+        .size-chart-link,
+        .add-to-bag,
+        .wishlist {
+            margin-right: 10px; 
+        }
+
+        .add-to-bag,
+        .wishlist {
+            display: inline-block; 
+            background-color: #007bff; 
+            color: #fff; 
+            border: none; 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            text-decoration: none; 
+            transition: background-color 0.3s; 
+        }
+
+        .add-to-bag:hover,
+        .wishlist:hover {
+            background-color: #0056b3; 
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin: 0 10px;
+        }
+
+        .footer-links li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .social-media {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1><a href="#">Sole Mates</a></h1>
+    <nav>
+        <ul>
+            <li><a href="Sneakers.html">HomePage</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDQnfbkXWVWfhvLktqgpPKcffrpzPnhXXcvKnrnnLkJGSvlWjCbPzwRlsKJXfDfVmvdzFB">
+                    <img src="Gmaillogo.jpg" alt="Contact" style="width: 20px; height: auto;"> Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div class="primary-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDR7cCVaLw9HavGWsEh0v42cz1L3Zlf49LPStPjMckvVVZDf6VxWHzjIs-Vs1Am0bELlk&usqp=CAU" alt="" width="300" height="400">
+        <div class="image-text"></div>
+    </div>
+    <div class="secondary-images">
+        <div class="secondary-image">
+            <img src="https://nb.scene7.com/is/image/NB/u9060blk_nb_05_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600"
+                 alt="" width="100" height="157">
+        </div>
+        <div class="secondary-image">
+            <img src="https://www.koovs.com/cdn/shop/files/shoestemplatekoovs-01_eb8f083c-c7a9-4ff9-9390-86278b91bda8.jpg?v=1685091690"
+                 alt="" width="100" height="157">
+        </div>
+    </div>
+</div>
+<div class="product-desc">
+    <h2>Air Hordan 1 Chiago Sneakers</h2>
+    <span class="rating">2023 Release </span>
+    <span class="price">17999 (45% OFF)</span>
+    <br>
+    <select class="size-selector">
+        <option value="UK7">UK 7</option>
+        <option value="UK8">UK 8</option>
+        <option value="UK9">UK 9</option>
+        <option value="UK10">UK 10</option>
+    </select>
+    <button class="add-to-bag" onclick="redirectToCart()">ADD TO Cart</button>
+    <button class="wishlist" onclick="redirectToWishlist()">WISHLIST</button>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <ul>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="returns.html">Return Policy</a></li>
+        </ul>
+    </div>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/arush-dubey-358840244/"><img src="" alt="linkedin"></a>
+        <a href="https://www.instagram.com/arushdubey360/"><img src="" alt="Instagram"></a>
+        <p>&copy; 2024 Sole Mates. All Rights Reserved.</p>
+    </div>
+</footer>
+<script>
+    function redirectToWishlist() {
+        window.location.href = "cart.html";
+    }
+
+    function redirectToCart() {
+        var productName = "Yezzey Sneakers";
+        var productImage = "hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDR7cCVaLw9HavGWsEh0v42cz1L3Zlf49LPStPjMckvVVZDf6VxWHzjIs-Vs1Am0bELlk&usqp=CAU";
+        var productPrice = "17999 (45% OFF)";
+
+        localStorage.setItem('productName1', productName2);
+        localStorage.setItem('productImage1', productImage2);
+        localStorage.setItem('productPrice1', productPrice2);
+
+        window.location.href = "cart.html";
+    }
+</script>
+</body>
+</html>
