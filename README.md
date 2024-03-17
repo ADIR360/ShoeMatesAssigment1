@@ -1,6 +1,7 @@
 Shoe Emporium Website
-   - **Login ID:** arush
-   - **Password:** arush123
+   - **Login ID:** admin
+   - **Password:** admin
+   - Or just press redirect button
 
 Welcome to the Shoe Emporium Website project repository! This project aims to provide a seamless platform for selling shoes online, offering a wide range of footwear options to customers while ensuring a smooth browsing and shopping experience.
 
