@@ -44,7 +44,7 @@ Installation
 
 Clone the repository to your local machine using the following command:
 bash
-git clone https://github.com/your-username/shoe-emporium.git
+git clone [https://github.com/your-username/shoe-emporium.git](https://github.com/ADIR360/ShoeMatesAssigment1.git)
 
 
 Navigate to the project directory:
